@@ -1,0 +1,15 @@
+/workspaces/Clase0/prueba/bin/Debug/net8.0/prueba
+/workspaces/Clase0/prueba/bin/Debug/net8.0/prueba.deps.json
+/workspaces/Clase0/prueba/bin/Debug/net8.0/prueba.runtimeconfig.json
+/workspaces/Clase0/prueba/bin/Debug/net8.0/prueba.dll
+/workspaces/Clase0/prueba/bin/Debug/net8.0/prueba.pdb
+/workspaces/Clase0/prueba/obj/Debug/net8.0/prueba.GeneratedMSBuildEditorConfig.editorconfig
+/workspaces/Clase0/prueba/obj/Debug/net8.0/prueba.AssemblyInfoInputs.cache
+/workspaces/Clase0/prueba/obj/Debug/net8.0/prueba.AssemblyInfo.cs
+/workspaces/Clase0/prueba/obj/Debug/net8.0/prueba.csproj.CoreCompileInputs.cache
+/workspaces/Clase0/prueba/obj/Debug/net8.0/prueba.sourcelink.json
+/workspaces/Clase0/prueba/obj/Debug/net8.0/prueba.dll
+/workspaces/Clase0/prueba/obj/Debug/net8.0/refint/prueba.dll
+/workspaces/Clase0/prueba/obj/Debug/net8.0/prueba.pdb
+/workspaces/Clase0/prueba/obj/Debug/net8.0/prueba.genruntimeconfig.cache
+/workspaces/Clase0/prueba/obj/Debug/net8.0/ref/prueba.dll
