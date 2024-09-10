@@ -1,27 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "/workspaces/Clase0/prueba/prueba.csproj": {}
+    "C:\\Users\\Student02\\Documents\\Repos\\Clase0\\prueba\\prueba.csproj": {}
   },
   "projects": {
-    "/workspaces/Clase0/prueba/prueba.csproj": {
+    "C:\\Users\\Student02\\Documents\\Repos\\Clase0\\prueba\\prueba.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/workspaces/Clase0/prueba/prueba.csproj",
+        "projectUniqueName": "C:\\Users\\Student02\\Documents\\Repos\\Clase0\\prueba\\prueba.csproj",
         "projectName": "prueba",
-        "projectPath": "/workspaces/Clase0/prueba/prueba.csproj",
-        "packagesPath": "/home/codespace/.nuget/packages/",
-        "outputPath": "/workspaces/Clase0/prueba/obj/",
+        "projectPath": "C:\\Users\\Student02\\Documents\\Repos\\Clase0\\prueba\\prueba.csproj",
+        "packagesPath": "C:\\Users\\Student02\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Student02\\Documents\\Repos\\Clase0\\prueba\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/codespace/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Student02\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
-        "sources": {
-          "https://api.nuget.org/v3/index.json": {}
-        },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
@@ -58,7 +55,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.401/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
