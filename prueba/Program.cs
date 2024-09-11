@@ -1,21 +1,4 @@
-﻿string firstName1;
-firstName1 = "Bob";
-Console.WriteLine (firstName1);
-Console.WriteLine ("********************************");
-string firstName;
-firstName = "Bob";
-Console.WriteLine(firstName);
-firstName = "Liem";
-Console.WriteLine(firstName);
-firstName = "Isabella";
-Console.WriteLine(firstName);
-firstName = "Yasmin";
-Console.WriteLine(firstName);
-Console.WriteLine ("********************************");
-string firstName2 = "Luz Adriana";
-Console.WriteLine(firstName2);
-Console.WriteLine ("********************************");
-//var message = "Hello world!";
+﻿  
 Console.WriteLine ("**************DESAFIO******************");
 string firstName3;
 firstName3 = "Bob";
