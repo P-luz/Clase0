@@ -1,46 +1,76 @@
-﻿  
-using System.Text;
-Console.WriteLine ("**************DESAFIO******************");
-string firstName3;
-firstName3 = "Bob";
-//Console.WriteLine (firstName);
-int num=3;
-//Console.WriteLine (num);
-//float tem = 34.4f;
-//Console.WriteLine (tem);
-var tem2 = 34.4;
-//Console.WriteLine (tem2);
-Console.WriteLine ("Hello,"+ firstName3 + ",! You have"+ num + "messages in your inbox. The temperature is"+tem2+ "celsius.");
-
-Console.WriteLine ("***********Ejemplo UTF**************");
-Console.OutputEncoding=Encoding.UTF8;
-Console.WriteLine("Generating invoices for customer \"Contoso Corp\" ...\n");
-Console.WriteLine("Invoice: 1021\t\tComplete!");
-Console.WriteLine("Invoice: 1022\t\tComplete!");
-Console.WriteLine("\nOutput Directory:\t");
-Console.Write(@"c:\invoices");
-
-// To generate Japanese invoices:
-// Nihon no seikyū-sho o seisei suru ni wa:
-//Console.Write("\n\n\u65e5\u672c\u306e\u8acb\u6c42\u66f8\u3092\u751f\u6210\u3059\u308b\u306b\u306f\uff1a\n\t");
-// User command to run an application
-//Console.WriteLine(@"c:\invoices\app.exe -j");
+﻿using System.Runtime.InteropServices;
+using Microsoft.VisualBasic;
 
 Console.Clear();
-Console.WriteLine ("***********Ejemplo 1**************");
-int version = 11;
-string updateText = "Update to Windows";
-string message = $"{updateText} {version.ToString()}!";
-Console.WriteLine(message);
+Console.WriteLine ("***********Clase 12 de Septiembre**************");
+Console.WriteLine ("***********Ejercicio 1 suma de numeros**************");
+int firstNumber = 12;
+int secondNumber = 7;
+Console.WriteLine(firstNumber + secondNumber);
+Console.WriteLine ("\n***********Ejercicio 2**************");
+string firstName = "Bob";
+int widgetsSold = 7;
+Console.WriteLine(firstName + " sold " + widgetsSold + " widgets.");
+Console.WriteLine(firstName + " sold " + widgetsSold + 7 + " widgets.");
+Console.WriteLine(firstName + " sold " + (widgetsSold + 7) + " widgets.");
+Console.WriteLine ("\n***********1. Operaciones entre numeros**************");
+int suma = (firstNumber+secondNumber);
+int resta = (firstNumber-secondNumber);
+int multiplicacion = (firstNumber*secondNumber);
+int division = (firstNumber/secondNumber);
+Console.WriteLine("1. El resultado de la suma es:"+suma);
+//Console.WriteLine("1. El resultado de la suma es:" +(firstNumber+secondNumber));
+Console.WriteLine("2. El resultado de la Resta es:"+resta);
+//Console.WriteLine("1. El resultado de la resta es:" +(firstNumber-secondNumber));
+Console.WriteLine("3. El resultado de la multiplicacion es:"+multiplicacion);
+//Console.WriteLine("1. El resultado de la multiplicacion es:" +(firstNumber*secondNumber));
+Console.WriteLine("4. El resultado de la division es:"+division);
+//Console.WriteLine("1. El resultado de la division es:" +((decimal)firstNumber/secondNumber));
+Console.WriteLine ("\n***********2. Division entre decimales**************");
+var firstNumber1 = 12m;
+var secondNumber2 = 7m;
+var division1 = (firstNumber1/secondNumber2);
+Console.WriteLine("El resultado de la division es:"+division1);
+Console.WriteLine ("\n***********3. Convertir resultados en enteros**************");
+Console.WriteLine("El resultado de la division condecimales:" +((decimal)firstNumber1 / secondNumber2));
+Console.WriteLine("El resultado de la division entero:" +((int)firstNumber1 / secondNumber2));
+var modulo = (firstNumber1 % secondNumber2);
+Console.WriteLine("El resultado de la residuo es:"+modulo);
+Console.WriteLine ("\n***********2. operaciones de incrmento y decremento**************");
+int value = 0;
+Console.WriteLine ( value);
+value = value +1;
+Console.WriteLine ( value);
+value ++;
+Console.WriteLine ( value);
+++value;
+Console.WriteLine ( value);
+// diferencia entre poner el ++ antes, se hace el incremento y se uiliza el valor, al lado derecho se usa el valor y luego se incrementa
+Console.WriteLine("El resultado de la residuo es:"+modulo); 
+Console.WriteLine("Ejercicios de RECAP");
+int valor = 0;
+Console.WriteLine ("- Valor original "+ valor);
+valor = valor +1;
+Console.WriteLine ("- Valor original mas uno "+ valor);
+valor ++;
+Console.WriteLine ("- Valor original mas incremento "+ valor);
+++valor;
+Console.WriteLine ("- Valor original mas incremento "+ valor);
+valor --;
+Console.WriteLine ("- Decrementa en uno "+ valor);
+--valor;
+Console.WriteLine ("- Decrementa e imprime "+ valor);
+valor*=2;
+Console.WriteLine ("- Valor por 2: "+ valor);
+valor+=2;
+Console.WriteLine ("- Valor por mas 2: "+ valor);
+Console.WriteLine ("Fin de RECAP");
 
 Console.Clear();
-Console.WriteLine ("***********Ejemplo UTF**************"); 
-string projectName = "First-Project";
-Console.WriteLine($@"C:\Output\{projectName}\Data");
-
-Console.Clear();
-Console.WriteLine ("***********desafío**************"); 
-Console.OutputEncoding=Encoding.UTF8;
-projectName = "ACME";
-string russianMessage = "\u041f\u043e\u0441\u043c\u043e\u0442\u0440\u0435\u0442\u044c \u0440\u0443\u0441\u0441\u043a\u0438\u0439 \u0432\u044b\u0432\u043e\u0434";
-Console.WriteLine (russianMessage);
+Console.WriteLine("\n*******Cálculo de los grados Celsius*******");
+int fahrenheit = 94;
+var Celsius = (( fahrenheit - 32)/(1.8));
+Console.WriteLine ("The temperature is: "+Math.Round(Celsius,1)+ " Celsius");
+Console.WriteLine ("The temperature is: "+Celsius.ToString("0.00")+ " Celsius");
+Console.WriteLine ("The temperature is: "+Celsius.ToString("#.##")+ " Celsius");
+//Console.WriteLine ("The temperature is: "+decimal.Round(Celsius,1)+ " Celsius");
