@@ -1,116 +1,68 @@
-﻿using System.Runtime.InteropServices;
-using Microsoft.VisualBasic;
-
+﻿Console.WriteLine("\n*******Aleatorio*******");
+/*Este código simula el lanzamiento de un dado, generando un número aleatorio entre 1 y 6 y luego lo muestra en la consola.*/
+var dados = new Random();
+int roll = dados.Next(1, 7);
+Console.WriteLine(roll);
+/* otra manera con un for*/
+/* otra manera en una sola linea, feractorizacion*/
+Console.WriteLine(new Random().Next(1, 7));
+Console.WriteLine("\n*******Clase Math*******"); 
+int firstValue = 500;
+int secondValue = 600;
+int largerValue;
+largerValue = Math.Max(firstValue, secondValue);
+Console.WriteLine(largerValue); 
 Console.Clear();
-Console.WriteLine ("***********Clase 12 de Septiembre**************");
-Console.WriteLine ("***********Ejercicio 1 suma de numeros**************");
-int firstNumber = 12;
-int secondNumber = 7;
-Console.WriteLine(firstNumber + secondNumber);
-Console.WriteLine ("\n***********Ejercicio 2**************");
-string firstName = "Bob";
-int widgetsSold = 7;
-Console.WriteLine(firstName + " sold " + widgetsSold + " widgets.");
-Console.WriteLine(firstName + " sold " + widgetsSold + 7 + " widgets.");
-Console.WriteLine(firstName + " sold " + (widgetsSold + 7) + " widgets.");
-Console.WriteLine ("\n***********1. Operaciones entre numeros**************");
-int suma = (firstNumber+secondNumber);
-int resta = (firstNumber-secondNumber);
-int multiplicacion = (firstNumber*secondNumber);
-int division = (firstNumber/secondNumber);
-Console.WriteLine("1. El resultado de la suma es:"+suma);
-//Console.WriteLine("1. El resultado de la suma es:" +(firstNumber+secondNumber));
-Console.WriteLine("2. El resultado de la Resta es:"+resta);
-//Console.WriteLine("1. El resultado de la resta es:" +(firstNumber-secondNumber));
-Console.WriteLine("3. El resultado de la multiplicacion es:"+multiplicacion);
-//Console.WriteLine("1. El resultado de la multiplicacion es:" +(firstNumber*secondNumber));
-Console.WriteLine("4. El resultado de la division es:"+division);
-//Console.WriteLine("1. El resultado de la division es:" +((decimal)firstNumber/secondNumber));
-Console.WriteLine ("\n***********2. Division entre decimales**************");
-var firstNumber1 = 12m;
-var secondNumber2 = 7m;
-var division1 = (firstNumber1/secondNumber2);
-Console.WriteLine("El resultado de la division es:"+division1);
-Console.WriteLine ("\n***********3. Convertir resultados en enteros**************");
-Console.WriteLine("El resultado de la division condecimales:" +((decimal)firstNumber1 / secondNumber2));
-Console.WriteLine("El resultado de la division entero:" +((int)firstNumber1 / secondNumber2));
-var modulo = (firstNumber1 % secondNumber2);
-Console.WriteLine("El resultado de la residuo es:"+modulo);
-Console.WriteLine ("\n***********2. operaciones de incrmento y decremento**************");
-int value = 0;
-Console.WriteLine ( value);
-value = value +1;
-Console.WriteLine ( value);
-value ++;
-Console.WriteLine ( value);
-++value;
-Console.WriteLine ( value);
-// diferencia entre poner el ++ antes, se hace el incremento y se uiliza el valor, al lado derecho se usa el valor y luego se incrementa
-Console.WriteLine("El resultado de la residuo es:"+modulo); 
-Console.WriteLine("Ejercicios de RECAP");
-int valor = 0;
-Console.WriteLine ("- Valor original "+ valor);
-valor = valor +1;
-Console.WriteLine ("- Valor original mas uno "+ valor);
-valor ++;
-Console.WriteLine ("- Valor original mas incremento "+ valor);
-++valor;
-Console.WriteLine ("- Valor original mas incremento "+ valor);
-valor --;
-Console.WriteLine ("- Decrementa en uno "+ valor);
---valor;
-Console.WriteLine ("- Decrementa e imprime "+ valor);
-valor*=2;
-Console.WriteLine ("- Valor por 2: "+ valor);
-valor+=2;
-Console.WriteLine ("- Valor por mas 2: "+ valor);
-Console.WriteLine ("Fin de RECAP");
+Console.WriteLine("\n*******Lógica de decisión con instrucciones if*******");
+Random dice = new Random();
+int roll1 = dice.Next(1, 7);
+int roll2 = dice.Next(1, 7);
+int roll3 = dice.Next(1, 7);
+int total = roll1 + roll2 + roll3;
+Console.WriteLine($"Dice roll: {roll1} + {roll2} + {roll3} = {total}");
+Console.WriteLine("\n******* otra forma Lógica de decisión con instrucciones if*******");
 
-Console.Clear();
-Console.WriteLine("\n*******Cálculo de los grados Celsius*******");
-int fahrenheit = 94;
-var Celsius = (( fahrenheit - 32)/(1.8));
-Console.WriteLine ("The temperature is: "+Math.Round(Celsius,1)+ " Celsius");
-Console.WriteLine ("The temperature is: "+Celsius.ToString("0.00")+ " Celsius");
-Console.WriteLine ("The temperature is: "+Celsius.ToString("#.##")+ " Celsius");
-//Console.WriteLine ("The temperature is: "+decimal.Round(Celsius,1)+ " Celsius");
+/*
+var total = 0;
+var tirada = 1;
+Console.WriteLine("Dice roll:");
+for (int i = 0; i<2; i++)
+{
+    tirada = dice.Next(1,7);
+    Console.Write ($" {tirada}+");
+    total = total+tirada;
+}
+Console.Write($"Total: {total}");
+*/
+if (total > 14)
+{
+    Console.WriteLine("You win!");
+}
 
-
-Console.Clear();
-Console.WriteLine("\n*******Cálculo de notas*******");
-int currentAssignments = 5;
-
-int sophia1 = 93;
-int sophia2 = 87;
-int sophia3 = 98;
-int sophia4 = 95;
-int sophia5 = 100;
-
-int nicolas1 = 80;
-int nicolas2 = 83;
-int nicolas3 = 82;
-int nicolas4 = 88;
-int nicolas5 = 85;
-
-int zahirah1 = 84;
-int zahirah2 = 96;
-int zahirah3 = 73;
-int zahirah4 = 85;
-int zahirah5 = 79;
-
-int jeong1 = 90;
-int jeong2 = 92;
-int jeong3 = 98;
-int jeong4 = 100;
-int jeong5 = 97;
-
-Console.WriteLine("\n*******Notas*******");
-Console.WriteLine("Sophia:\t\t"+sophia1+"\t"+sophia2+"\t"+sophia3+"\t"+sophia4+"\t"+sophia5);  
-Console.WriteLine("Nicolas:\t"+nicolas1+"\t"+nicolas2+"\t"+nicolas3+"\t"+nicolas4+"\t"+nicolas5);
-Console.WriteLine("Zahirah::\t"+zahirah1+"\t"+zahirah2+"\t"+zahirah3+"\t"+zahirah4+"\t"+zahirah5);
-Console.WriteLine("Jeong\t\t"+jeong1+"\t"+jeong2+"\t"+jeong3+"\t"+jeong4+"\t"+jeong5); 
-Console.WriteLine("\n*******Promedios del estudiante*******");
-Console.WriteLine("Sophia:\t\t"+((sophia1+sophia2+sophia3+sophia4+sophia5)/5).ToString("0.00"));  
-Console.WriteLine("Nicolas:\t"+((nicolas1+nicolas2+nicolas3+nicolas4+nicolas5)/5).ToString("0.00"));
-Console.WriteLine("Zahirah::\t"+((zahirah1+zahirah2+zahirah3+zahirah4+zahirah5)/5).ToString("0.00"));
-Console.WriteLine("Jeong\t\t"+((jeong1+jeong2+jeong3+jeong4+jeong5)/5).ToString("0.00"));
+if (total < 15)
+{
+    Console.WriteLine("Sorry, you lose.");
+}
+// otra forma //
+if (total > 14)
+    Console.WriteLine("You win!");
+else
+    Console.WriteLine("Sorry, you lose.");
+Console.WriteLine('a'!='b');
+// otra forma //
+total = 0;
+int [] tirada1 = new int [3];
+for (int i = 0;i<3;i++)
+{
+    tirada1[i]= dice.Next(1,7);
+    Console.Write($"{tirada1[i]} {(i<2? "+":"")}");
+    total = total + tirada1[i];
+}
+// otra forma //
+Console.WriteLine("Aqui vamos por otro");
+if ((tirada1[0] == tirada1[1]) || (tirada1[1] == tirada1[2]) || (tirada1[2] == tirada1[0]))
+{
+    Console.WriteLine("You rolled doubles! +2 bonus to total!");
+    total += 2;
+}
+// otra forma //
